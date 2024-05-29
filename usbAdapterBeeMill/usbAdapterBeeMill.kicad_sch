@@ -1108,9 +1108,9 @@
 					)
 				)
 				(pin bidirectional line
-					(at 38.1 0 180)
+					(at 38.1 -2.54 180)
 					(length 2.54)
-					(name "D+"
+					(name "D-"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1126,9 +1126,9 @@
 					)
 				)
 				(pin bidirectional line
-					(at 38.1 -2.54 180)
+					(at 38.1 0 180)
 					(length 2.54)
-					(name "D-"
+					(name "D+"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1650,98 +1650,6 @@
 		)
 	)
 	(symbol
-		(lib_id "usbConnector:USB_A")
-		(at 113.03 102.87 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a11ef68c-bf0c-443a-bb86-14607b8d97bf")
-		(property "Reference" "J2"
-			(at 128.27 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "USB_A"
-			(at 128.27 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "usbAdapter:usbDouble"
-			(at 116.84 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" " ~"
-			(at 116.84 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "USB Type A connector"
-			(at 113.03 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "9"
-			(uuid "bf7adc37-9be4-4c5b-9e90-6b978dbdb893")
-		)
-		(pin "7"
-			(uuid "8471a2cc-0707-4582-b7f4-64aa2a40b0b7")
-		)
-		(pin "5"
-			(uuid "353dab1b-5bfc-4341-8d05-0c0cf50fff80")
-		)
-		(pin "2"
-			(uuid "e5b9c249-6a93-4a71-ad3c-97b0144b6e9d")
-		)
-		(pin "6"
-			(uuid "dd5a7fff-ee23-4b60-90e2-64e78e6e263c")
-		)
-		(pin "1"
-			(uuid "68196cbe-01e2-4217-9d0d-60f5f7e626c5")
-		)
-		(pin "4"
-			(uuid "6d412b33-8ba1-4f22-a2e0-9a7d33a2940e")
-		)
-		(pin "3"
-			(uuid "92598e38-94db-4b2e-a199-7281763a64b5")
-		)
-		(pin "10"
-			(uuid "09adaee2-5f57-40c4-aad6-94b16e3ce322")
-		)
-		(pin "8"
-			(uuid "f377a0b3-77be-4f36-8f14-05ed1808a5f0")
-		)
-		(instances
-			(project "usbAdapterBeeMill"
-				(path "/2edc6b67-6c19-4008-9a6c-c4f40c493b33"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 196.85 104.14 90)
 		(unit 1)
@@ -2068,6 +1976,98 @@
 			(project "usbAdapterBeeMill"
 				(path "/2edc6b67-6c19-4008-9a6c-c4f40c493b33"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "usbConnector:USB_A")
+		(at 113.03 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e7dd5f70-2610-43e1-8689-9a4ce4bef171")
+		(property "Reference" "J2"
+			(at 128.27 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "USB_A"
+			(at 128.27 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 116.84 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" " ~"
+			(at 116.84 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "USB Type A connector"
+			(at 113.03 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "57325bf8-6e9a-49a0-954d-e0e611655de5")
+		)
+		(pin "5"
+			(uuid "10460ccf-7586-47b2-b3cb-a3ecfcfd2929")
+		)
+		(pin "4"
+			(uuid "3aba09f6-321f-456f-80e9-1a747e6ca760")
+		)
+		(pin "10"
+			(uuid "bc352354-b3aa-406a-9c0d-01c9f98e0e61")
+		)
+		(pin "2"
+			(uuid "0e0e6c8e-aea8-4feb-b8f8-96dce680e14d")
+		)
+		(pin "6"
+			(uuid "0b4c8ed1-e930-4688-ad8b-79e356ae3464")
+		)
+		(pin "8"
+			(uuid "ba36fa51-b062-4cdd-bf17-6eba333b8c40")
+		)
+		(pin "9"
+			(uuid "aa5b6846-69d0-43c9-a272-c347e86ecfb6")
+		)
+		(pin "1"
+			(uuid "c2757345-9ea5-4674-a129-c3e4a84b4370")
+		)
+		(pin "3"
+			(uuid "a99eeb9d-2d24-4953-ae11-f2601ba49974")
+		)
+		(instances
+			(project "usbAdapterBeeMill"
+				(path "/2edc6b67-6c19-4008-9a6c-c4f40c493b33"
+					(reference "J2")
 					(unit 1)
 				)
 			)
